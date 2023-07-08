@@ -2,9 +2,21 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
-ReactDOM.render(<>
-    <div className="header" style={{ textAlign: "center" }}>
-      <a href="./">QUIZ APP</a>
-    </div>
+import { Auth0Provider } from '@auth0/auth0-react';
+
+ReactDOM.render(
+ <Auth0Provider
+    domain="dev-508rkv0nejkhzxd7.us.auth0.com"
+    clientId="U4f5gm34UW2xNSoRBLaWpqtDgjYmIvGq"
+    authorizationParams={{
+      redirect_uri: window.location.origin
+    }}
+  >
+    <>
+  <div className="header" style={{ textAlign: "center" }}>
+    <a href="./">QUIZ APP</a>
+  </div>
     <App />
-  </>, document.getElementById("root"));
+    </>
+  </Auth0Provider>
+, document.getElementById("root"));

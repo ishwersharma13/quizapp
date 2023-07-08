@@ -22,7 +22,8 @@ const Welcome = ({ setCategory, setTotalQuestions, setLevel, setStart, }) => {
         e.preventDefault();
         setStart(true);
     };
-    return (<div className="welcome">
+    return (
+    <div className="welcome">
       <img src="https://t4.ftcdn.net/jpg/04/39/13/37/360_F_439133763_FrLdhZsd5aGC23r9ATARuKJBr8ifZjIe.jpg" alt="" />
       <div className="heading">
       <div className="landing-page">
