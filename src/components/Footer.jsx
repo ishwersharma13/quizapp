@@ -2,7 +2,7 @@ import React from 'react';
 const Footer = () => {
     return (<div className='footer'>
            <div className='innerFooter'>
-                Developed by <a target='blank' href="http://facebook.com/saadusufzai">Saad Aslam</a> | <a href="https://github.com/saadusufzai/Quiz-App-React--and-Typescrpt" target='blank'>GITHUB REPO</a>   
+         <a href="#" target='blank'>Put your knowledge to the test with captivating quizzes covering a wide range of topics.</a>   
             </div> 
         </div>);
 };

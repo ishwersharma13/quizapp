@@ -23,9 +23,18 @@ const Welcome = ({ setCategory, setTotalQuestions, setLevel, setStart, }) => {
         setStart(true);
     };
     return (<div className="welcome">
+      <img src="https://t4.ftcdn.net/jpg/04/39/13/37/360_F_439133763_FrLdhZsd5aGC23r9ATARuKJBr8ifZjIe.jpg" alt="" />
       <div className="heading">
-        <h1>Welcome to the Ultimate Quiz App</h1>
-        <p>Select your ultimate quiz and test your knowledge </p>
+      <div className="landing-page">
+      <header className="landing-page-header">
+        <h1 className="landing-page-title">MindQuiz</h1>
+        <p className="landing-page-subtitle">Unleash Your Knowledge</p>
+      </header>
+      <section className="landing-page-section">
+        <h2 className="landing-page-section-title">Challenge Your Mind</h2>
+        <p className="landing-page-section-description">Put your knowledge to the test with captivating quizzes covering a wide range of topics. From history and science to pop culture and sports, there's something for everyone.</p>
+      </section>
+      </div>
       </div>
       <div>
         <form onSubmit={(e) => {
